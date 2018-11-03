@@ -14,6 +14,7 @@
 		6C901A11218DC555004FB57E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C901A0F218DC555004FB57E /* LaunchScreen.storyboard */; };
 		6C901A1C218DC555004FB57E /* UIViewControllerLifeCycleLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C901A1B218DC555004FB57E /* UIViewControllerLifeCycleLoggerTests.swift */; };
 		6C901A27218DC555004FB57E /* UIViewControllerLifeCycleLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C901A26218DC555004FB57E /* UIViewControllerLifeCycleLoggerUITests.swift */; };
+		6C901A36218DC572004FB57E /* UIViewControllerLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C901A35218DC572004FB57E /* UIViewControllerLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		6C901A22218DC555004FB57E /* UIViewControllerLifeCycleLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewControllerLifeCycleLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C901A26218DC555004FB57E /* UIViewControllerLifeCycleLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerLifeCycleLoggerUITests.swift; sourceTree = "<group>"; };
 		6C901A28218DC555004FB57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C901A34218DC571004FB57E /* UIViewControllerLifeCycleLogger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewControllerLifeCycleLogger-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C901A35218DC572004FB57E /* UIViewControllerLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				6C901A0D218DC555004FB57E /* Assets.xcassets */,
 				6C901A0F218DC555004FB57E /* LaunchScreen.storyboard */,
 				6C901A12218DC555004FB57E /* Info.plist */,
+				6C901A35218DC572004FB57E /* UIViewControllerLogger.m */,
+				6C901A34218DC571004FB57E /* UIViewControllerLifeCycleLogger-Bridging-Header.h */,
 			);
 			path = UIViewControllerLifeCycleLogger;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				TargetAttributes = {
 					6C901A02218DC554004FB57E = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					6C901A16218DC555004FB57E = {
 						CreatedOnToolsVersion = 10.0;
@@ -258,6 +264,7 @@
 			files = (
 				6C901A09218DC554004FB57E /* ViewController.swift in Sources */,
 				6C901A07218DC554004FB57E /* AppDelegate.swift in Sources */,
+				6C901A36218DC572004FB57E /* UIViewControllerLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIViewControllerLifeCycleLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +448,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = abuzeid.UIViewControllerLifeCycleLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIViewControllerLifeCycleLogger/UIViewControllerLifeCycleLogger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIViewControllerLifeCycleLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = abuzeid.UIViewControllerLifeCycleLogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIViewControllerLifeCycleLogger/UIViewControllerLifeCycleLogger-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
